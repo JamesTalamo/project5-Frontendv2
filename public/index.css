@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "EB Garamond", serif;
+}
+
+#addPhotoContainer{
+    width: 30%;
+    height: 30%; 
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+
+    z-index: 4; 
+    position:absolute; 
+    top:5%;
+    left:10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    transition: 1s;
+
+    opacity: 0;  
+}
+
+#addPhotoContainer form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+#galleryBtnContainer {
+    width: 40%;
+    height: 20%; 
+    background-color: transparent; 
+    z-index: 4; 
+    position:absolute; 
+    bottom: 7%; 
+    right: 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    opacity: 0;
+}
+
+.galleryButton {
+    width: 30%;
+    height: 30%;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.50); /**/
+    backdrop-filter: blur(5px);                     /**/
+    -webkit-backdrop-filter: blur(5px);             /**/
+    border: 0px solid rgba(255, 255, 255, 0.3);     /**/
+    border-radius: 15px;                                 /**/
+
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 4;
+
+    /* border-radius: 50%; */
+    cursor: pointer;
+    opacity: 1;
+}
+.galleryButton:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.90); /**/
+    -webkit-backdrop-filter: blur(20px);             /**/
+}
+
+
+#mainTemplate {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+#button {
+    position: absolute;
+
+
+
+    width: 300px;
+    height: 300px;
+    /* background-image: url('./img/icon.png'); */
+
+
+    border-radius: 50%;
+
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 2s;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+
+    /* background-position-x: -18px;
+    background-position-y: -16px; */
+
+
+    animation: dimAndLight 4s infinite alternate;
+}
+
+
+
+@keyframes dimAndLight {
+    0% {
+        box-shadow: 0px 0px 10px 100px rgba(131, 129, 129, 0.5);
+        /* Initial shadow */
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 30px rgba(71, 71, 71, 0.2);
+        /* Dimmed shadow */
+    }
+
+    100% {
+        box-shadow: 0px 0px 30px 60px rgba(56, 56, 56, 0.3);
+        /* Lightened shadow */
+    }
+}
+
+
+#template2 {
+
+    position: absolute;
+
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: transparent;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#book-ui {
+    left: 0;
+
+    height: 100%;
+    width: 10%;
+    /* background-color: rgb(150, 147, 147); */
+    /* border-radius: 15px; */
+    opacity: 1;
+
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 1rem; */
+
+    /* border: solid 3px black; */
+
+    position: absolute;
+
+
+
+    transition: 2s;
+
+    font-size: 30px;
+    color: white;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.navInside {
+    color: BLACK;
+    opacity: 0;
+    transition: 1s;
+
+    font-size: 18px;
+}
+
+
+.nav:hover .navInside {
+    opacity: 1;
+}
+
+.nav {
+    /* width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border:solid 3px black;
+
+    transition:1s; */
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.12);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+
+    width: 95%;
+    height: 400px;
+
+    transition: 1s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav:hover {
+    cursor: pointer;
+}
+
+/**/
+.template-memory1 {
+    top: 100%;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/imgtourl-d501f.appspot.com/o/Frontend%20Assets%2Fpage3%20para1.jpg?alt=media&token=21d3bffa-ff2f-492c-a24f-dcec3f1c3bd7');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: 2s;
+}
+
+/**/
+.template-memory2 {
+    top: 100%;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/imgtourl-d501f.appspot.com/o/Frontend%20Assets%2Fpage5%20parabg.jpg?alt=media&token=62bcce68-1174-4490-b438-713b323fdbdc');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: 2s;
+}
+
+/**/
+.template-memory3 {
+    top: 100%;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/imgtourl-d501f.appspot.com/o/Frontend%20Assets%2Fpage4%20parabg.jpg?alt=media&token=5eeea58d-bbc9-4731-a417-011deffa525d');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: 2s;
+}
+
+
+/*templates for backends*/
+.MemoryCon {
+    width: 85%;
+    height: 85%;
+    background-color: transparent;
+    /*TEMPLATE TO SA LOOB, i TRANSPARENT mo if may nakalagay na sa loob*/
+    z-index: 3;
+    transition: 0.5s;
+    opacity: 0;
+
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+    /* border: solid 5px black; */
+}
+
+.saveMemoryCon {
+    width: 85%;
+    height: 85%;
+    background-color: transparent;
+    /*TEMPLATE TO SA LOOB, i TRANSPARENT mo if may nakalagay na sa loob*/
+    z-index: 3;
+    transition: 0.5s;
+    opacity: 0;
+
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+    /* border: solid 5px black; */
+}
+
+.saveMemoryConInside {
+    width: 60%;
+    height: 80%;
+    /* background-color: red;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/imgtourl-d501f.appspot.com/o/Frontend%20Assets%2Fborder-asset.png?alt=media&token=57450f87-6a33-4f59-aeed-d20f7249abb3');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.50); /**/
+    backdrop-filter: blur(5px);                     /**/
+    -webkit-backdrop-filter: blur(5px);             /**/
+    border: 0px solid rgba(255, 255, 255, 0.3);     /**/
+    border-radius: 15px;                                 /**/
+
+    position: absolute;     
+
+
+    border-radius: 5%;
+
+
+    /* box-shadow: 0px 0px 30px 0px rgba(255, 18, 18, 0.5); */
+
+    right: -2%;
+    top: 7%;
+}
+
+.infoMemory{
+    width: 40%;
+    height: 80%;
+    /* background-color: red; */
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.50); 
+    backdrop-filter: blur(5px);                     
+    -webkit-backdrop-filter: blur(5px);             
+    border: 0px solid rgba(255, 255, 255, 0.3);     
+    border-radius: 15px;     
+
+    position: absolute;     
+
+    left: 12%;
+    top: 7%;
+    z-index: 4;
+
+    opacity: 0;
+
+    transition:1s;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

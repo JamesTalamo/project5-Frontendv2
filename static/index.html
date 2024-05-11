@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/ba/fa/8e/bafa8e3045390225a9faa78c2b1552a3.jpg"
+        type="image/png">
+    <title>Talamo Memory Lane</title>
+</head>
+<!--4/25/2024 9:08 AM-->
+
+<body style="overflow: hidden;">
+
+    <div id="mainTemplate" style="overflow: hidden;">
+
+        <div id="button">
+        </div>
+
+        <div id="template2">
+            <div id="book-ui">
+                <div class="nav" id="btnMemory">
+                    <div class="navInside">ADD PHOTO</div>
+                </div>
+                <div class="nav" id="btnSaveMemory">
+                    <div class="navInside">GALLERY</div>
+                </div>
+                <div class="nav" id="btnDeleteMemory">
+                    <div class="navInside">INFO</div>
+                </div>
+            </div>
+
+            <div id="galleryBtnContainer">
+                <div class="galleryButton" id="galBtn1">Prev</div>
+                <div class="galleryButton" id="galBtn2">Next</div>
+            </div>
+
+            <div id="addPhotoContainer">
+            
+                <!-- <form action="http://localhost:7000/api" method="POST" enctype="multipart/form-data" id="mainForm"> -->
+                <form action="https://project5-backend.onrender.com/api" method="POST" enctype="multipart/form-data" id="mainForm">
+                    <input type="file" name="image" id="file">
+                    <input type="text" name="name" id="name" placeholder="Image Title">
+                    <input type="submit">
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
+
+<script src="./index.js"></script>
