@@ -585,7 +585,7 @@ let deleteMemoryCon = () => {
     p.style.width='90%'
     p.style.color='white'
     p.style.fontSize='1.5vw'
-    p.innerText="Hello guys! I'm the developer of this simple project, James. I made this thing to practice my FRONTEND and BACKEND skills in programming. \n\nIn this point of time I'm 20 and been studying FULLSTACK for 6 months\n\nThis thing took me almost 2 weeks because in this point of time in my life i've been busy alot because of school exams.TECH STACK USED frontend(HTML, CSS, JS) backend(node) deployments(glitch - server for my static website)(render - server for my backend api) and FIREBASE to store image!\n\nI'm really happy that I started this personal project. I hope that my future self will look at this and say 'This thing is easy for me now.'  "
+    p.innerText="Hello guys! I'm the developer of this simple project, James. I made this thing to practice my FRONTEND and BACKEND skills in programming. \n\nIn this point of time I'm 20 and been studying FULLSTACK for 6 months\n\nThis thing took me almost 2 weeks because in this point of time in my life i've been busy alot because of school exams.\n\nTECH STACK USED frontend(HTML, CSS, JS) backend(node) deployments(glitch - server for my static website)(render - server for my backend api) and FIREBASE to store image!\n\nI'm really happy that I started this personal project. I hope that my future self will look at this and say 'This thing is easy for me now.'  "
 
     
 
